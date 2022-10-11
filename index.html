@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <title>task</title>
+    <style>
+      .elem{
+        display: none;
+      }
+      .btn{
+        border-radius: 50%;
+        height: 2.4rem;
+        width: 5rem;
+        border: 1px solid grey;
+        margin: 20px 40px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <button onclick="click1()" class="btn">Music</button>
+    <button onclick="click2()" class="btn">Live</button>
+    <button onclick="click3()" class="btn">Courts</button>
+    <button onclick="click4()" class="btn">Dogs</button>
+
+    <div class="elem elem1">
+      <img src = "/1.png" alt="" height="200px" width="200px">
+      <img src="/2.png" alt="" height="200px" width="200px">
+    </div>
+    <div class="elem elem2">
+      <img src = "/3.png" alt="" height="200px" width="200px">
+      <img src="/4.png" alt="" height="200px" width="200px">
+    </div>
+    <div class="elem elem3">
+      <img src = "/5.png" alt="" height="200px" width="200px">
+      <img src="/6.png" alt="" height="200px" width="200px">
+    </div>
+    <div class="elem elem4">
+      <img src="/download.png" alt="" height="200px" width="200px">
+      <img src = "/1.png" alt="" height="200px" width="200px">
+    </div>
+
+  </body>
+  <script>
+
+      function click1(){
+        document.querySelector(".elem1").style.display = 'block';
+        document.querySelector(".elem2").style.display = 'none';
+        document.querySelector(".elem3").style.display = 'none';
+        document.querySelector(".elem4").style.display = 'none';
+      }
+      function click2(){
+        document.querySelector(".elem1").style.display = 'none';
+        document.querySelector(".elem2").style.display = 'block';
+        document.querySelector(".elem3").style.display = 'none';
+        document.querySelector(".elem4").style.display = 'none';
+      }
+      function click3(){
+        document.querySelector(".elem1").style.display = 'none';
+        document.querySelector(".elem2").style.display = 'none';
+        document.querySelector(".elem3").style.display = 'block';
+        document.querySelector(".elem4").style.display = 'none';
+      }
+      function click4(){
+        document.querySelector(".elem1").style.display = 'none';
+        document.querySelector(".elem2").style.display = 'none';
+        document.querySelector(".elem3").style.display = 'none';
+        document.querySelector(".elem4").style.display = 'block';
+      }
+
+  </script>
+</html>
